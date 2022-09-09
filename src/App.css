@@ -1,10 +1,52 @@
 .navbar-expand-lg .navbar-collapse {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    font-size: large;
 }
 
-.navbar-brand{
+.navbar-brand {
+    color: white;
     display: flex;
     justify-content: center;
     font-size: x-large;
+    margin-right: 9px;
+    margin-bottom: 5px;
+}
+
+.nav-link {
+    color: white;
+}
+
+.bg-primary {
+    background: linear-gradient(to right, #000000, #434343) !important;
+}
+
+.img-logo {
+    margin-right: 28px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    margin-left: 8px;
+    background: black;
+    border-color: black
+}
+
+.btn-primary:hover {
+    --bs-btn-hover-bg: black;
+}
+
+.ItemListContainer-paragraph {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-family: emoji;
+}
+
+
+svg {
+    height: 46px;
+    width: 26px;
 }
