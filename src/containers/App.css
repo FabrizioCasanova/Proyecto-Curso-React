@@ -1,0 +1,119 @@
+.navbar-expand-lg .navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+}
+
+.navbar-brand {
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    margin-right: 9px;
+    margin-bottom: 5px;
+}
+
+.nav-link {
+    color: aqua;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.nav-link:active{
+    color: white;
+    background-color: rgba(240, 248, 255, 0.13);
+}
+
+.nav-link:visited{
+    color: aqua;
+}
+
+
+.bg-primary {
+    background: linear-gradient(to right, #000000, #434343) !important;
+}
+
+.h5{
+    color: aqua;
+    margin-bottom: 27px;
+}
+
+.textDescription{
+    font-size: smaller;
+    color: white;
+}
+
+.img-logo {
+    margin-right: 28px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.card-img-top{
+height: 230px;
+}
+
+.btn-primary {
+    margin-left: 8px;
+    background: black;
+    border-color: black
+    
+    
+}
+
+.btn-primary:hover{    
+    --bs-btn-hover-border-color: aqua
+}
+
+.btn-primary:active{
+    --bs-btn-active-bg: aqua 
+}
+
+.btn-primary:active{
+    --bs-btn-active-color:black
+}
+
+.cardsProducts{
+    display: inline-grid;
+    margin: 45px;
+}
+
+.price{
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+
+
+.Waveform-module_container__kGWZq{
+    margin-inline: auto;
+    margin-top: 19%;
+}
+
+.card-body{
+    padding: 15px;
+    background: linear-gradient(to bottom, #000000, #434343);
+    color: white;
+}
+
+.btn-primary:hover {
+    --bs-btn-hover-bg: black;
+}
+
+.ItemListContainer-paragraph {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-family: emoji;
+}
+
+
+svg {
+    height: 46px;
+    width: 26px;
+}

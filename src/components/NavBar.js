@@ -1,11 +1,10 @@
 import CartWidget from "./CartWidget";
-import gameController from "../img/game-controller.png"
+import gameZone from "../img/GameZone.webp";
 function NavBar() {
     return (
     <nav className="navbar navbar-expand-lg bg-primary">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Gaming Zone</a>
-    <img className="img-logo" src={gameController} alt=""/>
+    <img className="img-logo" src={gameZone} alt=""/>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>

@@ -3,11 +3,11 @@ import Button from 'react-bootstrap/Button';
 function ItemCount(){
     function handleAdd(){
         if(amount == 1){
-            console.log(`Se ha agregado ${amount} producto a tu carrito`)
+           alert(`Se ha agregado ${amount} producto a tu carrito`)
         } else if (amount > 1){
-            console.log(`Se  han agregado ${amount} productos a tu carrito`)
+            alert(`Se  han agregado ${amount} productos a tu carrito`)
         } else{
-            console.log("Indique la cantidad de productos que quiere añadir al carrito")
+            alert("Indique la cantidad de productos que quiere añadir al carrito")
         }
     }
     
