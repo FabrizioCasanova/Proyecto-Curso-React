@@ -1,7 +1,8 @@
 import './App.css';
 import NavBar from '../components/NavBar';
-import ItemListContainer from './ItemListContainer';
-import Loader from '../components/LoaderItem';
+import ItemDetailContainer from '../components/ItemDetailContainer';
+/*import ItemListContainer from './ItemListContainer';*/
+
 
 function App() {
 
@@ -9,7 +10,8 @@ function App() {
     <>
     
     <NavBar/>
-    <ItemListContainer greeting = "Bienvenidos a Game Zone"/>
+    {/* <ItemListContainer greeting = "Bienvenidos a Game Zone"/> */}
+    <ItemDetailContainer/>
    
     </>
   );

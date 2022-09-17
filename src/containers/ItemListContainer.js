@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+/*import React, { useEffect, useState } from "react"
 import getList from "../utils/getList"
 import ItemList from "../components/ItemList"
 import Loader from "../components/LoaderItem"
@@ -24,6 +24,7 @@ function ItemListContainer (text) {
         </>  
         
     )
-}
+    }
 
-export default ItemListContainer;
+export default ItemListContainer; 
+*/
