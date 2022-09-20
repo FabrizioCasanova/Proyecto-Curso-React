@@ -15,6 +15,7 @@ const productsList = [
     price: 26000,
     description: "Audífonos inalámbricos con micrófono para juegos diseñados para desempeño y confort. Equipados con todo el sonido envolvente, los filtros de voz y la iluminación avanzada que necesitas para lucir, sonar y jugar con más estilo que nunca.",
     productCategory: 4,
+    stock: 27, 
     image: aurisLogitech
 },
 
@@ -24,6 +25,7 @@ const productsList = [
     price: 23000,
     description: "El CORSAIR 4000D es un chasis ATX semitorre distintivo, pero minimalista, con una sencilla gestión del cableado y una refrigeración excepcional gracias a los dos ventiladores CORSAIR AirGuide incluidos.",
     productCategory: 6,
+    stock: 15,
     image: gabineteCorsair
 },
 
@@ -33,7 +35,9 @@ const productsList = [
     price: 18000,
     description:"Con el micrófono HyperX descubrirás una nueva forma de captar y emitir audios. Fiel reflejo de la realidad.Ideal para varias actividades. Te brindará un sonido de calidad y conseguirás la nitidez de las voces." ,
     productCategory: 5,
+    stock: 26,
     image: microHyperX
+
 },
 
 {
@@ -42,6 +46,7 @@ const productsList = [
     price: 65000 ,
     description: "Disfrutá de todas las cualidades que el monitor AOC E1670SWU-E tiene para ofrecerte. Percibí las imágenes de una manera completamente diferente y complementá cualquier espacio ya sea en tu casa u oficina." ,
     productCategory: 1,
+    stock: 8,
     image: monitorAoc
 },
 
@@ -51,6 +56,7 @@ const productsList = [
     price: 8500 ,
     description: "MOUSE PAD GAMING CON CARGA INALAMBRICA - CONTORNO COLORES RGB RETROILUMINADO LED - BOTON TOUCH PARA CONTROL DE LUZ - 80 X 30 X 0.4 CM - CARGA INALÁMBRICA PARA CELULARES - TRANSPORTABLE Y ENROLLABLE, ANTIDESLIZANTE." ,
     productCategory: 7,
+    stock: 4,
     image: mousepad
 },
 
@@ -60,6 +66,7 @@ const productsList = [
     price: 11500 ,
     description: "Adaptado a tus movimientos. El mouse de juego te ofrecerá la posibilidad de marcar la diferencia y sacar ventajas en tus partidas. Su conectividad y sensor suave ayudará a que te desplaces rápido por la pantalla." ,
     productCategory: 2,
+    stock: 20,
     image: mouseRazer
 },
 
@@ -69,6 +76,7 @@ const productsList = [
     price: 8800 ,
     description: "La gran calidad del Redragon Kumara K552, y su precio económico lo vuelven un atractivo ideal para que te diviertas frente a la pantalla. Su ergonomía, su base antidelizante y su rápido tiempo de respuesta permite que tus juegos favoritos se sientan más cerca que nunca, al alcance de tus manos." ,
     productCategory: 3,
+    stock: 25,
     image: tecladoRedDragon
 },
 ]

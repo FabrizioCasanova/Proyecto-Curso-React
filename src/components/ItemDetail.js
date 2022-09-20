@@ -1,6 +1,5 @@
 import Card from 'react-bootstrap/Card';
 import ItemCount from '../components/ItemCount';
-import Accordion from 'react-bootstrap/Accordion';
 
 
 function ItemDetail({ item }) {
@@ -19,9 +18,13 @@ return(
         </Card.Text>
         <Card.Text className='cardPriceDetail'> ${item.price}</Card.Text>
         <div className='itemCountStyle'>
-        <ItemCount/>
+        <ItemCount stock={item.stock} />
         </div> 
       </Card.Body>
+
+
+
+
      {/* <Accordion className='acordion' defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header>ESPECIFICACIONES Y DETALLES</Accordion.Header>
