@@ -1,19 +1,20 @@
 import './App.css';
 import NavBar from '../components/NavBar';
 import ItemDetailContainer from '../components/ItemDetailContainer';
-/*import ItemListContainer from './ItemListContainer';*/
-
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ItemListContainer from './ItemListContainer';
 function App() {
 
   return (
-    <>
     
+    <BrowserRouter>
     <NavBar/>
-    {/* <ItemListContainer greeting = "Bienvenidos a Game Zone"/> */}
-    <ItemDetailContainer/>
-   
-    </>
+    <Routes>
+        <Route path='/' element= {<ItemListContainer/>} ></Route>
+        <Route path='/category/:id' element= {<ItemListContainer/>}> </Route>
+        <Route path='/item/:id' element= {<ItemDetailContainer/> }></Route>
+    </Routes>
+    </BrowserRouter>
   );
 }
 

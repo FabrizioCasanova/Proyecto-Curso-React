@@ -39,8 +39,37 @@ body {
     background: linear-gradient(to right, #000000, #434343) !important;
 }
 
-.h5 {
+.CardItemContainer{
+    background-color: black;
+}
 
+.cardBodyItemContainer {
+    background-color: black;
+    font-size: 30px;
+}
+
+ .cardTitleItemContainer {
+    font-size: 20px ;
+    color: aqua;
+}
+
+.cardDescriptionItemContainer {
+        color: white;
+        font-size: 15px;
+        margin-top: 29px;
+        font-family: ui-rounded;
+}
+
+
+.buttonDetailContainer{
+    display: flex;
+    justify-content: center;
+}
+
+/*  Inicio de la mayoria de los estilos del ContainerDetail */
+
+
+.cardTitleDetail{
     color: aqua;
     margin-bottom: 27px;
     font-size: xx-large;
@@ -56,7 +85,7 @@ h5 {
     color: aqua;
 }
 
-.textDescription {
+.cardDescriptionDetail {
     color: white;
     font-family: unset;
 }
@@ -81,6 +110,7 @@ h5 {
 
 .card-img-top {
     height: 230px;
+    background-color: white;
 }
 
 .btn-primary {
@@ -120,21 +150,23 @@ h5 {
     margin: 45px;
 }
 
-.price {
+.cardPriceDetail {
     display: flex;
     justify-content: center;
     font-family: monospace;
     font-size: x-large;
 }
 
-
+.navbar-expand-lg .navbar-nav .nav-link{
+    margin-left: 105px;
+}
 
 .Waveform-module_container__kGWZq {
     margin-inline: auto;
     margin-top: 19%;
 }
 
-.card-body {
+.cardBodyDetail {
     padding: 15px;
     color: white;
     width: 520px;
@@ -207,6 +239,7 @@ h5 {
     font-family: emoji;
 }
 
+/*  Fin de la mayoria de los estilos del ContainerDetail */
 
 svg {
     height: 46px;

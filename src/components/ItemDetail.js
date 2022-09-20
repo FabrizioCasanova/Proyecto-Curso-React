@@ -12,17 +12,17 @@ return(
     <img className='imgDetail' src={item.image} alt=""></img>
     </div>
     <div>
-      <Card.Body>
-        <Card.Title>{item.title}</Card.Title>
-        <Card.Text className='textDescription'>
+      <Card.Body className='cardBodyDetail'>
+        <Card.Title className='cardTitleDetail'>{item.title}</Card.Title>
+        <Card.Text className='cardDescriptionDetail'>
           {item.description}
         </Card.Text>
-        <Card.Text className='price'> ${item.price}</Card.Text>
+        <Card.Text className='cardPriceDetail'> ${item.price}</Card.Text>
         <div className='itemCountStyle'>
         <ItemCount/>
         </div> 
       </Card.Body>
-      <Accordion className='acordion' defaultActiveKey="0">
+     {/* <Accordion className='acordion' defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header>ESPECIFICACIONES Y DETALLES</Accordion.Header>
         <Accordion.Body>
@@ -63,7 +63,7 @@ return(
 
         </Accordion.Body>
       </Accordion.Item>
-    </Accordion>
+</Accordion>*/}
     </div>
   </section>
 

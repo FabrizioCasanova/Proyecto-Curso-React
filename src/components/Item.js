@@ -1,23 +1,20 @@
 import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
-import ItemCount from '../components/ItemCount';
+import Button from 'react-bootstrap/Button';
+import {Link} from "react-router-dom";
 function Item({product}){
     return(
 
       <section className='cardsProducts'>
-        
-        <Card style={{ width: '18rem' }}>
+        <Card className='CardItemContainer' style={{ width: '18rem' }}>
       <Card.Img variant="top" src={product.image} />
-      <Card.Body>
-        <Card.Title>{product.title}</Card.Title>
-        <Card.Text className='textDescription'>
-          {product.description}
-        </Card.Text>
-        <Card.Text className='price'> ${product.price}</Card.Text>
-        <ItemCount/>
+      <Card.Body className='cardBodyItemContainer'>
+        <Card.Title className='cardTitleItemContainer'>{product.title}</Card.Title>
+        <Card.Text className='cardDescriptionItemContainer'> {product.description}</Card.Text>
+        <div className='buttonDetailContainer'>
+        <Link to = {"/item/" + product.id}><Button type="submit">Detalles del Producto</Button></Link>
+        </div>      
       </Card.Body>
     </Card>
-   
     </section>
     )
 } 
