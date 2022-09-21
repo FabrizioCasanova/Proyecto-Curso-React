@@ -239,6 +239,23 @@ h5 {
     font-family: emoji;
 }
 
+.buttonGoCart{
+    width: 494px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.parrafoCart{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin-top: 7%;
+}
+
+.parrafoGoInicio{
+    margin-top: 42px;
+    text-align: center;
+}
 /*  Fin de la mayoria de los estilos del ContainerDetail */
 
 svg {

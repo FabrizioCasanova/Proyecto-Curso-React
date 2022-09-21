@@ -1,8 +1,20 @@
+import { useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import ItemCount from '../components/ItemCount';
+import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+
 
 
 function ItemDetail({ item }) {
+
+const [itemAmount, setItemAmount] = useState(0)
+
+function addProduct(count){
+  
+        alert(`Has agregado ${count} producto/s a tu carrito `)
+        setItemAmount(count)
+    }
 
 return(
 <>
@@ -18,7 +30,9 @@ return(
         </Card.Text>
         <Card.Text className='cardPriceDetail'> ${item.price}</Card.Text>
         <div className='itemCountStyle'>
-        <ItemCount stock={item.stock} />
+
+        
+        { itemAmount === 0 ? <ItemCount stock={item.stock} initial={1} addProduct={addProduct}/> : <Link to = "/cart"><Button className='buttonGoCart'>Ir al carrito</Button></Link>}
         </div> 
       </Card.Body>
 

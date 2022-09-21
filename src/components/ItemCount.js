@@ -1,18 +1,9 @@
 import { useState } from "react";
 import Button from 'react-bootstrap/Button';
-function ItemCount({ stock }){
-    function handleAdd(){
-        if(amount === 1){
-           alert(`Se ha agregado ${amount} producto a tu carrito`)
-        } else if (amount > 1){
-            alert(`Se  han agregado ${amount} productos a tu carrito`)
-        } else{
-            alert("Indique la cantidad de productos que quiere añadir al carrito")
-        }
-    }
+function ItemCount({ stock, initial, addProduct }){
 
-   const [amount, setAmount] = useState(0);
-   
+    const [amount, setAmount] = useState(initial) 
+
    function handleAmount1(){
         if(amount < stock ){
             setAmount(amount+1);    
@@ -20,7 +11,7 @@ function ItemCount({ stock }){
    }
 
    function handleAmount2(){
-    if (amount > 0) {
+    if (amount > initial) {
         setAmount(amount-1);    
     }  
    }
@@ -29,7 +20,7 @@ function ItemCount({ stock }){
         <>
          <Button onClick={handleAmount1} type="submit">+</Button> {amount}
          <Button onClick={handleAmount2} type="submit">-</Button>
-         <Button onClick={handleAdd} type="submit">Agregar al carrito</Button>
+         <Button onClick={() => addProduct(amount)} type="submit">Agregar al carrito</Button>
         </>
     )
 }

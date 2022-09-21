@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# GAME ZONE        
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto de React.js destinado como entrega final para el curso de CoderHouse
 
-## Available Scripts
+Tienda e-commerce dedicada a la venta y distribucion de productos para el mundo de los videojuegos y/o de la computacion.
 
-In the project directory, you can run:
 
-### `npm start`
+## Base Del Sitio
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+El sitio web esta creado mediante las siguientes librerias: React, react-router-dom para la creacion de las distintas rutas existentes, react-bootstrap para los elementos visuales de la pagina, y css para los distintos estilos que tiene la misma. Ademas cabe destacar la creacion de los distintos componentes que contiene la pagina los cuales se encuentran en distintos archivos ubicados en sus respectivas carpetas para la organizacion y el orden del codigo.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Intenciones para futuras actualizaciones
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Como se puede ver, el sitio esta en desarrollo, por lo que se van a ir aplicando muchos cambios mediante distitnas actualizaciones que se iran haciendo a lo largo del tiempo. Las intenciones que se tienen es ir avanzando el desarrollo del sitio creando un carrito de compras totalmente funcional con la mayor cantidad de virtudes posibles en cuanto a la comodidad que deseamos para los usuarios. Y ademas de esto, agregar nuevos productos y hacer retoques en los estilos. Y por ultimo podes crear y establecer un almacenamiento complementandolo con el carrito de compras para que todos los datos ingresados por los usuarios queden registrados. Tambien se puede llegar a pensar en la implementacion de un login, pero eso no esta del todo confirmado.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Frameworks Y Librerias Utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+react v18.2.0 - Bootstrap v5.1 - react-dom v18.2.0 - react-router-dom v6.4.0 - react-icons: ^4.4.0 -  react-bootstrap: ^2.5.0 - @uiball/loaders": "^1.2.6" - @mui/material: ^5.10.4
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Organizacion del codigo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Como mencione anteriormente los distintos componentes que existen en el sitio estan creados en archivos que se encuentran en sus respectivas carpetas, pero para especificar aun mas, mencionar como esta hecha la distribucion del todo el codigo: Dentro de la carpeta src es donde esta todo el codigo, en ella se encuentran 4 carpetas, estas son las carpetas componentes, containers, img, y utils. En la primera se pueden ver todos los elementos que forman el sitio, en la segunda encontramos los compartimientos en donde los elementos anteriormente mencionados se utilizan para renderizarse, en la carpeta img como su nombre lo indica contiene todas las imagenes utilizadas para el proyecto, y en la ultima, llamada utils, tenemos nuestra lista de productos, y el componente que simula la carga de un servidor real, que complementada a ella implementamos un spinn de carga. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

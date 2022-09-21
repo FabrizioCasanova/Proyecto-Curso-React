@@ -9,6 +9,7 @@ function ItemDetailContainer () {
 
     const [productItem, setProductItem] = useState({})
     const [loadingPage, setLoadingPage] = useState(false)
+
     const { id } = useParams();
      useEffect(() => {
         setLoadingPage(true)
@@ -18,6 +19,7 @@ function ItemDetailContainer () {
         .finally(() => setLoadingPage(false))
     }, [id])
 
+    
     return(
         <>
         
