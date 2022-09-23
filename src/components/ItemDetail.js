@@ -1,23 +1,25 @@
-import { useState } from 'react';
+import { useContext } from 'react';
 import Card from 'react-bootstrap/Card';
 import ItemCount from '../components/ItemCount';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
+import { cartContext } from './CartContext';
 
 
 
 function ItemDetail({ item }) {
 
-const [itemAmount, setItemAmount] = useState(0)
+const {addItem, inCart, deleteProduct } = useContext(cartContext)
 
 function addProduct(count){
   
         alert(`Has agregado ${count} producto/s a tu carrito `)
-        setItemAmount(count)
+        addItem(item, count)
     }
 
 return(
 <>
+<Link to = "/"><Button className="buttonGoInicio">Volver al Inicio</Button></Link>
     <section className='container-products'>
     <div>
     <img className='imgDetail' src={item.image} alt=""></img>
@@ -29,15 +31,20 @@ return(
           {item.description}
         </Card.Text>
         <Card.Text className='cardPriceDetail'> ${item.price}</Card.Text>
-        <div className='itemCountStyle'>
-
         
-        { itemAmount === 0 ? <ItemCount stock={item.stock} initial={1} addProduct={addProduct}/> : <Link to = "/cart"><Button className='buttonGoCart'>Ir al carrito</Button></Link>}
+        <div>
+          
+        {inCart(item.id) &&
+        <p className='productIsInCart'>Este producto ya esta en el carrito</p> }
+    
+        { (inCart(item.id)) ?  <Link to = "/cart"><Button className='buttonGoCart'>Ir al carrito</Button></Link> :  <ItemCount stock={item.stock} initial={1} addProduct={addProduct}/>}
+        {inCart(item.id) &&
+          <div className='itemButtonCart'>
+          <Button className='buttonGoCart' onClick={()=> deleteProduct(item.id)}>Borrar del Carrito</Button>
+          </div>
+        }
         </div> 
       </Card.Body>
-
-
-
 
      {/* <Accordion className='acordion' defaultActiveKey="0">
       <Accordion.Item eventKey="0">
