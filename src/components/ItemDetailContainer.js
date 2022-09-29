@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react"
 import Loader from "../components/LoaderItem"
 import ItemDetail from "./ItemDetail"
-import fetchPromise from "../utils/fetchPromise"
-import productsList from "../utils/products"
 import { useParams } from "react-router-dom"
-
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../utils/configFirebase"
 function ItemDetailContainer () {
 
     const [productItem, setProductItem] = useState({})
@@ -12,14 +11,16 @@ function ItemDetailContainer () {
 
     const { id } = useParams();
      useEffect(() => {
-        setLoadingPage(true)
-        fetchPromise(2000, productsList.find(item => item.id == id))
-        .then((response)=> setProductItem(response))
-        .catch((err) => console.error(err))
-        .finally(() => setLoadingPage(false))
+            setLoadingPage(true)
+            const docRef = doc(db, "Products", id);
+            getDoc(docRef)
+            .then(result => setProductItem({
+                id: result.id,
+                ...result.data() 
+            }))
+            .finally(() => setLoadingPage(false))
     }, [id])
 
-    
     return(
         <>
         

@@ -18,7 +18,7 @@ function NavBar() {
        <Link to = "/category/4" className="nav-link" href="#">Auriculares</Link>
        <Link to = "/category/5" className="nav-link" href="#">Microfonos</Link>
        <Link to = "/category/1" className="nav-link" href="#">Monitores</Link>
-       <Link to = "/category/2" className="nav-link" href="#">Gabinetes</Link>
+       <Link to = "/category/6" className="nav-link" href="#">Gabinetes</Link>
       
       </div>
     </div>
