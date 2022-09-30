@@ -96,7 +96,6 @@ h5 {
 
 .img-logo {
     margin-right: 28px;
-    margin-left: 0px;
     cursor: pointer;
 }
 
@@ -162,7 +161,8 @@ h5 {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link{
-    margin-left: 105px;
+    margin-left: 16%;
+    margin-top: 1%;
 }
 
 .Waveform-module_container__kGWZq {
@@ -244,10 +244,8 @@ h5 {
 }
 
 .buttonGoCart{
-    width: 494px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-top: 39px;
+    width: 100%;
+    margin-top: 11%;
 }
 
 .elementsCartEmpty{
@@ -289,17 +287,25 @@ h5 {
 
 .clearAllProducts{
     display: flex;
-    margin-left: 48%;
+    margin-left: 47%;
+    width: 13%;
     margin-top: 4%;
+    justify-content: center;
 }
 
 .totalPrice{
     text-align: center;
     margin-top: 14px;
-    margin-left: 135px;
+    margin-left: 7%;
     color: white;
     font-size: 17px;
 }
+.createOrder{
+    display: flex;
+    margin-left: 47%;
+    margin-top: 1%;
+}
+
 
 .bg-secondary{
 background: aqua !important;

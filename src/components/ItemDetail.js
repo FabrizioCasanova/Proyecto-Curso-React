@@ -37,7 +37,7 @@ return(
         {inCart(item.id) &&
         <p className='productIsInCart'>Este producto ya esta en el carrito</p> }
     
-        { (inCart(item.id)) ?  <Link to = "/cart"><Button className='buttonGoCart'>Ir al carrito</Button></Link> :  <ItemCount stock={item.stock} initial={1} addProduct={addProduct}/>}
+        { (inCart(item.id)) ?  <Link to = "/cart"><Button className='buttonGoCart'>Ir al carrito</Button></Link> :  <ItemCount stock={item.stock} initial={0} addProduct={addProduct}/>}
         {inCart(item.id) &&
           <div className='itemButtonCart'>
           <Button className='buttonGoCart' onClick={()=> deleteProduct(item.id)}>Borrar del Carrito</Button>
