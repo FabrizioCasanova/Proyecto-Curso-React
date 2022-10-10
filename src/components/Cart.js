@@ -48,12 +48,14 @@ return(
    </div>
    :
    <div>
-     <Link to = "/"><Button className="buttonGoInicio2">Volver al Inicio</Button></Link>
+    
     {cartList.map(element => <CartItem key={element.item.id} produc={element}></CartItem>)}
     <Button className="clearAllProducts" onClick={clear}> Borrar Todos Los Productos</Button>
     <p className="totalPrice"> Total a pagar: ${totalPriceInCart()}</p>
     <Button className="createOrder" onClick={createOrder}>Crear Nueva Orden De Compra</Button> 
+    <Link to = "/"><Button className="buttonGoInicio2">Volver al Inicio</Button></Link>
     </div>
+
     }
     </>
 );

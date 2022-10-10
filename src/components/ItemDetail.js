@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import { cartContext } from './CartContext';
 
-
-
 function ItemDetail({ item }) {
 
 const {addItem, inCart, deleteProduct } = useContext(cartContext)

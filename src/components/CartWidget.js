@@ -9,7 +9,7 @@ function CartWidget(){
    
     return(
         <>
-        <GrCart/> {(totalCantInCart() != 0) && <Badge bg="secondary">{totalCantInCart()}</Badge>} 
+        <GrCart/> {(totalCantInCart() !== 0) && <Badge bg="secondary">{totalCantInCart()}</Badge>} 
         </>
     )
 } 
