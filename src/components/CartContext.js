@@ -14,8 +14,6 @@ function ProviderOfCartContext({children}){
         setCartList([...cartList, {item: product, count}])
        }
     }
-    
-
     function inCart(id) {
         return cartList.some(element => element.item.id === id)
     }
@@ -35,16 +33,11 @@ function ProviderOfCartContext({children}){
         setCartList([])
     }
 
-    
-     
-
     return (
 
         <cartContext.Provider value={{cartList, addItem, inCart, totalCantInCart, totalPriceInCart, deleteProduct, clear}}>
             {children}
         </cartContext.Provider>    
-
-
     )
 }
 

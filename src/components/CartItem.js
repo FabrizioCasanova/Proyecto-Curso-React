@@ -3,10 +3,6 @@ import { cartContext } from "./CartContext";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-
-
-
-
 function CartItem({ produc }){
 
     const { deleteProduct } = useContext(cartContext)
