@@ -10,14 +10,13 @@ function ItemDetail({ item }) {
 const {addItem, inCart, deleteProduct } = useContext(cartContext)
 
 function addProduct(count){
-  
         alert(`Has agregado ${count} producto/s a tu carrito `)
         addItem(item, count)
     }
 
 return(
 <>
-<Link to = "/"><Button className="buttonGoInicio">Volver al Inicio</Button></Link>
+<Link to = "/"><Button id='buttonGoInicio' className="buttonGoInicio">Volver al Inicio</Button></Link>
     <section className='container-products'>
     <div>
     <img className='imgDetail' src={item.image} alt=""></img>

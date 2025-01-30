@@ -47,16 +47,23 @@ return(
    <Link to = "/"><Button className="buttonGoInicio">Volver al Inicio</Button></Link>
    </div>
    :
+      
    <div>
-    
+<Link to = "/"><Button className="buttonGoInicio2">Volver al Inicio</Button></Link>
+   <div>
+
     {cartList.map(element => <CartItem key={element.item.id} produc={element}></CartItem>)}
+    <div className="cartButtons">
     <Button className="clearAllProducts" onClick={clear}> Borrar Todos Los Productos</Button>
     <p className="totalPrice"> Total a pagar: ${totalPriceInCart()}</p>
     <Button className="createOrder" onClick={createOrder}>Crear Nueva Orden De Compra</Button> 
-    <Link to = "/"><Button className="buttonGoInicio2">Volver al Inicio</Button></Link>
+    </div>
+    </div>
     </div>
 
     }
+
+    
     </>
 );
 }

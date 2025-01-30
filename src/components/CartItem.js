@@ -9,17 +9,19 @@ function CartItem({ produc }){
 
     return(
         <>
+<section className='seccionCardProducts'>
 <section className='cardsProducts'>
-<Card className="CardItemContainer" style={{ width: '18rem' }}>
+<Card className="CardItemContainer" >
     <Card.Img variant="top" src={produc.item.image} />
       <Card.Body className="cardBodyItemContainer">
         <Card.Title className="cardTitleItemContainer">{produc.item.title}</Card.Title>
         <Card.Text className="cardDescriptionItemContainer"> Cantidad: {produc.count}</Card.Text>
         <Card.Text className="cardDescriptionItemContainer"> Precio: ${produc.item.price}</Card.Text>
-        <Button onClick={() => deleteProduct(produc.item.id)}> Borrar producto del carrito</Button>
+        <Button id="deleteProductCart" onClick={() => deleteProduct(produc.item.id)}> Borrar producto del carrito</Button>
       </Card.Body>
     </Card>
-    </section>
+</section>
+</section>
  </>
     )
 }   

@@ -20,7 +20,7 @@ function ItemCount({ stock, initial, addProduct }){
         <div  className='itemCountStyle'>
          <Button onClick={handleAmount2} type="submit">-</Button> {amount}
          <Button onClick={handleAmount1} type="submit">+</Button>
-         <Button onClick={() => addProduct(amount)} type="submit">Agregar al carrito</Button>
+         <Button id="btn-Add-Cart" onClick={() => addProduct(amount)} type="submit">Agregar al carrito</Button>
          </div>
     )
 }
